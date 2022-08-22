@@ -1,25 +1,22 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Card from './components/Card';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const image = 'https://via.placeholder.com/180x130';
+	const cardText = 'Card title';
+	const cardTitle = "Some quick example text to build on the card title and make up the bulk of the card's content.";
+	const cardButtonText = 'Go somewhere';
+	const cardButtonRef = '#';
+
+	return (
+		<Card >
+			<img src={image} className="card-img-top" alt="..." />
+			<h5 className="card-title">{cardText}</h5>
+			<p className="card-text">{cardTitle}</p>
+			<a href={cardButtonRef} className="btn btn-primary">{cardButtonText}</a>
+		</Card>
+	);
 }
 
 export default App;
