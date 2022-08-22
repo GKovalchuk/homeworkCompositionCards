@@ -1,6 +1,6 @@
 ## Компонент, аналогичный карточке Bootstrap. Задача - правильно использовать возможности props.children
 
-карточка Bootstrap
+## карточка Bootstrap
 ![CompositionCards](./CardBootstrap.jpg)
 
 ## Решение задачи
